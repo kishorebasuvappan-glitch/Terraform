@@ -12,7 +12,7 @@ resource "azurerm_virtual_network" "vnet" {
 }
 
 resource "azurerm_subnet" "subnet" {
-    name =
+    name = var.subnet_name
     location = azurerm_resource_group.rg.location
     virtual_network_name = azurerm_virtual_network.vnet.name
     address_prefixes = ["10.1.0.3/24"]
