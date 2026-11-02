@@ -1,0 +1,13 @@
+
+{
+  "keys": [
+    {
+      "kid": "jenkins-oidc-token",
+      "alg": "RS256",
+      "use": "sig",
+      "kty": "RSA",
+      "n": "iq4wdMBGxrEKFr0d9Lgt4S4Sbf5s7M4ZTcBvtEAzTUwINYoqwYbWzz6mnQyizme9ihrQ3es9ldXlrBbA0vghAf6YTZ1rsVh9oqvIrLmAZTT79xleQpddWisOMoNoGJ4OplPPf9Pgg9uKfish3ImzoAS3CZPQhP1R8ekQ1kgXHMgg8vSAgGlSeJQ6ZOEc4DCiCyZS1Udg4VH78NjtCi0bfoo1yVTzmBBksIr1inLpsNynC2dwM1CL--JZ5uXV3mP8Lwv8wQm0d5-nfuYNhuKYt6q8xwbgzOby4hvcYllUnRQp1IPCQMZ1rkCJLvuXUYG4AVItl08SDnfsieP-KMQXuw",
+      "e": "AQAB"
+    }
+  ]
+}

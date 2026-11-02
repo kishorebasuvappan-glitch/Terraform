@@ -1,0 +1,770 @@
+==========================================
+Starting Jenkins Codespaces installation
+==========================================
+[1/5] Installing prerequisites, Git, and Java...
+Get:1 https://download.docker.com/linux/ubuntu noble InRelease [48.5 kB]
+Get:2 https://download.docker.com/linux/ubuntu noble/stable amd64 Packages [84.9 kB]
+Hit:3 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:5 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:7 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Fetched 133 kB in 1s (161 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20260601~24.04.1).
+curl is already the newest version (8.5.0-2ubuntu10.16).
+gnupg is already the newest version (2.4.4-2ubuntu17.6).
+git is already the newest version (1:2.43.0-1ubuntu7.4).
+fontconfig is already the newest version (2.15.0-1.1ubuntu2).
+openjdk-21-jre is already the newest version (21.0.12.1+1-1~24.04.4).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 60 not upgraded.
+7 not fully installed or removed.
+After this operation, 0 B of additional disk space will be used.
+Setting up libapparmor1:amd64 (4.0.1really4.0.1-0ubuntu0.24.04.9) ...
+Setting up apparmor (4.0.1really4.0.1-0ubuntu0.24.04.9) ...
+Created symlink /etc/systemd/system/sysinit.target.wants/apparmor.service → /usr/lib/systemd/system/apparmor.service.
+Reloading AppArmor profiles 
+Setting up docker-buildx-plugin (0.38.0-1~ubuntu.24.04~noble) ...
+Setting up containerd.io (2.4.2-2~ubuntu.24.04~noble) ...
+
+Configuration file '/etc/containerd/config.toml'
+ ==> File on system created by you or by a script.
+ ==> File also in package provided by package maintainer.
+   What would you like to do about it ?  Your options are:
+    Y or I  : install the package maintainer's version
+    N or O  : keep your currently-installed version
+      D     : show the differences between the versions
+      Z     : start a shell to examine the situation
+ The default action is to keep your current version.
+*** config.toml (Y/I/N/O/D/Z) [default=N] ? y
+Installing new version of config file /etc/containerd/config.toml ...
+Setting up docker-compose-plugin (5.6.0-1~ubuntu.24.04~noble) ...
+Setting up docker-ce-cli (5:29.9.1-1~ubuntu.24.04~noble) ...
+Setting up docker-ce-rootless-extras (5:29.9.1-1~ubuntu.24.04~noble) ...
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.8) ...
+[2/5] Installing Azure CLI...
+Get:1 https://packages.microsoft.com/repos/azure-cli noble InRelease [3564 B]
+Hit:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease
+Get:4 https://packages.microsoft.com/repos/azure-cli noble/main amd64 Packages [2576 B]
+Hit:5 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:6 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:7 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Fetched 6140 B in 1s (7176 B/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+The following NEW packages will be installed:
+  azure-cli
+0 upgraded, 1 newly installed, 0 to remove and 60 not upgraded.
+Need to get 57.1 MB of archives.
+After this operation, 616 MB of additional disk space will be used.
+Get:1 https://packages.microsoft.com/repos/azure-cli noble/main amd64 azure-cli amd64 2.91.0-1~noble [57.1 MB]
+Fetched 57.1 MB in 0s (225 MB/s)
+Selecting previously unselected package azure-cli.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 61812 files and directories currently installed.)
+Preparing to unpack .../azure-cli_2.91.0-1~noble_amd64.deb ...
+Unpacking azure-cli (2.91.0-1~noble) ...
+Setting up azure-cli (2.91.0-1~noble) ...
+[3/5] Installing Jenkins LTS...
+Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:2 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Get:5 https://pkg.jenkins.io/debian-stable binary/ Release [2044 B]
+Get:6 https://pkg.jenkins.io/debian-stable binary/ Release.gpg [833 B]
+Hit:7 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:10 http://security.ubuntu.com/ubuntu noble-security InRelease
+Get:11 https://pkg.jenkins.io/debian-stable binary/ Packages [36.5 kB]
+Fetched 39.3 kB in 1s (31.2 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+The following NEW packages will be installed:
+  jenkins
+0 upgraded, 1 newly installed, 0 to remove and 60 not upgraded.
+Need to get 53.7 MB of archives.
+After this operation, 54.1 MB of additional disk space will be used.
+Get:1 https://pkg.jenkins.io/debian-stable binary/ jenkins 2.580.1 [53.7 MB]
+Fetched 53.7 MB in 4s (14.2 MB/s)
+Selecting previously unselected package jenkins.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 91615 files and directories currently installed.)
+Preparing to unpack .../jenkins_2.580.1_all.deb ...
+Unpacking jenkins (2.580.1) ...
+Setting up jenkins (2.580.1) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Created symlink /etc/systemd/system/multi-user.target.wants/jenkins.service → /usr/lib/systemd/system/jenkins.service.
+[4/5] Configuring Jenkins...
+Jenkins startup initiated.
+[5/5] Verifying installations...
+
+----- Installed versions -----
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Microsoft-14951822 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-14951822 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+git version 2.55.0
+Azure-cli    Azure-cli-core    Azure-cli-telemetry
+-----------  ----------------  ---------------------
+2.91.0       2.91.0            1.1.0
+Docker version 29.9.1, build dfc520d
+
+Docker daemon availability:
+WARNING: Docker CLI exists, but the daemon is unavailable.
+Configure Docker-in-Docker or another supported daemon.
+
+----- Jenkins status -----
+Jenkins process is running.
+
+----- Jenkins initial setup password -----
+Password not available yet.
+Check the Jenkins log: /var/log/jenkins/jenkins.log
+
+==========================================
+Installation script finished.
+Setup log: /workspaces/Terraform/logs/jenkins-codespace-setup.log
+Jenkins log: /var/log/jenkins/jenkins.log
+Jenkins port: 8080
+Open port 8080 in the Codespaces Ports tab.
+==========================================
+==========================================
+Starting Jenkins Codespaces installation
+==========================================
+[1/5] Installing prerequisites, Git, and Java...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Get:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease [3600 B]
+Get:3 https://download.docker.com/linux/ubuntu noble InRelease [48.5 kB]
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:6 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:7 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main amd64 Packages [652 kB]
+Get:8 https://download.docker.com/linux/ubuntu noble/stable amd64 Packages [86.8 kB]
+Get:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:11 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1549 kB]
+Get:14 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1733 kB]
+Get:15 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2171 kB]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [1411 kB]
+Fetched 8033 kB in 3s (2770 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (8.5.0-2ubuntu10.16).
+gnupg is already the newest version (2.4.4-2ubuntu17.6).
+git is already the newest version (1:2.43.0-1ubuntu7.4).
+fontconfig is already the newest version (2.15.0-1.1ubuntu2).
+openjdk-21-jre is already the newest version (21.0.12.1+1-1~24.04.4).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+The following packages will be upgraded:
+  ca-certificates
+1 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+Need to get 139 kB of archives.
+After this operation, 3072 B disk space will be freed.
+Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 ca-certificates all 20260816ubuntu0.24.04.1 [139 kB]
+Preconfiguring packages ...
+Fetched 139 kB in 1s (136 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 91630 files and directories currently installed.)
+Preparing to unpack .../ca-certificates_20260816ubuntu0.24.04.1_all.deb ...
+Unpacking ca-certificates (20260816ubuntu0.24.04.1) over (20260601~24.04.1) ...
+Setting up ca-certificates (20260816ubuntu0.24.04.1) ...
+Updating certificates in /etc/ssl/certs...
+rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+4 added, 5 removed; done.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for ca-certificates (20260816ubuntu0.24.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Processing triggers for ca-certificates-java (20240118) ...
+done.
+[2/5] Installing Azure CLI...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+azure-cli is already the newest version (2.91.0-1~noble).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[3/5] Installing Jenkins LTS...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+jenkins is already the newest version (2.580.1).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[4/5] Configuring Jenkins...
+Jenkins startup initiated.
+[5/5] Verifying installations...
+
+----- Installed versions -----
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Microsoft-14951822 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-14951822 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+git version 2.55.0
+Azure-cli    Azure-cli-core    Azure-cli-telemetry
+-----------  ----------------  ---------------------
+2.91.0       2.91.0            1.1.0
+Docker version 29.9.1, build dfc520d
+
+Docker daemon availability:
+WARNING: Docker CLI exists, but the daemon is unavailable.
+Configure Docker-in-Docker or another supported daemon.
+
+----- Jenkins status -----
+Jenkins process is running.
+
+----- Jenkins initial setup password -----
+Password not available yet.
+Check the Jenkins log: /var/log/jenkins/jenkins.log
+
+==========================================
+Installation script finished.
+Setup log: /workspaces/Terraform/logs/jenkins-codespace-setup.log
+Jenkins log: /var/log/jenkins/jenkins.log
+Jenkins port: 8080
+Open port 8080 in the Codespaces Ports tab.
+==========================================
+./jenkinssetup.sh: line 186: https://expert-eureka-6v967gq5gq57cqqj-8080.app.github.dev/: No such file or directory
+==========================================
+Starting Jenkins Codespaces installation
+==========================================
+[1/5] Installing prerequisites, Git, and Java...
+Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:2 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20260816ubuntu0.24.04.1).
+curl is already the newest version (8.5.0-2ubuntu10.16).
+gnupg is already the newest version (2.4.4-2ubuntu17.6).
+git is already the newest version (1:2.43.0-1ubuntu7.4).
+fontconfig is already the newest version (2.15.0-1.1ubuntu2).
+openjdk-21-jre is already the newest version (21.0.12.1+1-1~24.04.4).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[2/5] Installing Azure CLI...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:9 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+azure-cli is already the newest version (2.91.0-1~noble).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[3/5] Installing Jenkins LTS...
+Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:2 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+jenkins is already the newest version (2.580.1).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[4/5] Configuring Jenkins...
+Jenkins startup initiated.
+[5/5] Verifying installations...
+
+----- Installed versions -----
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Microsoft-14951822 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-14951822 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+git version 2.55.0
+Azure-cli    Azure-cli-core    Azure-cli-telemetry
+-----------  ----------------  ---------------------
+2.91.0       2.91.0            1.1.0
+Docker version 29.9.1, build dfc520d
+
+Docker daemon availability:
+WARNING: Docker CLI exists, but the daemon is unavailable.
+Configure Docker-in-Docker or another supported daemon.
+
+----- Jenkins status -----
+Jenkins process is running.
+
+----- Jenkins initial setup password -----
+Password not available yet.
+Check the Jenkins log: /var/log/jenkins/jenkins.log
+
+==========================================
+Installation script finished.
+Setup log: /workspaces/Terraform/logs/jenkins-codespace-setup.log
+Jenkins log: /var/log/jenkins/jenkins.log
+Jenkins port: 8080
+Open port 8080 in the Codespaces Ports tab.
+==========================================
+./jenkinssetup.sh: line 186: https://expert-eureka-6v967gq5gq57cqqj-8080.app.github.dev/: No such file or directory
+==========================================
+Starting Jenkins Codespaces installation
+==========================================
+[1/5] Installing prerequisites, Git, and Java...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Get:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease [3600 B]
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Get:6 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble/main amd64 Packages [660 kB]
+Hit:8 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:9 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:10 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:11 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2170 kB]
+Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1733 kB]
+Fetched 4945 kB in 3s (1894 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20260816ubuntu0.24.04.1).
+curl is already the newest version (8.5.0-2ubuntu10.16).
+gnupg is already the newest version (2.4.4-2ubuntu17.6).
+git is already the newest version (1:2.43.0-1ubuntu7.4).
+fontconfig is already the newest version (2.15.0-1.1ubuntu2).
+openjdk-21-jre is already the newest version (21.0.12.1+1-1~24.04.4).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[2/5] Installing Azure CLI...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:10 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+azure-cli is already the newest version (2.91.0-1~noble).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[3/5] Installing Jenkins LTS...
+Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:2 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:8 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+jenkins is already the newest version (2.580.1).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[4/5] Configuring Jenkins...
+Jenkins startup initiated.
+[5/5] Verifying installations...
+
+----- Installed versions -----
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Microsoft-14951822 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-14951822 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+git version 2.55.0
+Azure-cli    Azure-cli-core    Azure-cli-telemetry
+-----------  ----------------  ---------------------
+2.91.0       2.91.0            1.1.0
+Docker version 29.9.1, build dfc520d
+
+Docker daemon availability:
+WARNING: Docker CLI exists, but the daemon is unavailable.
+Configure Docker-in-Docker or another supported daemon.
+
+----- Jenkins status -----
+Jenkins process is running.
+
+----- Jenkins initial setup password -----
+Password not available yet.
+Check the Jenkins log: /var/log/jenkins/jenkins.log
+
+==========================================
+Installation script finished.
+Setup log: /workspaces/Terraform/logs/jenkins-codespace-setup.log
+Jenkins log: /var/log/jenkins/jenkins.log
+Jenkins port: 8080
+Open port 8080 in the Codespaces Ports tab.
+==========================================
+./jenkinssetup.sh: line 186: https://expert-eureka-6v967gq5gq57cqqj-8080.app.github.dev/: No such file or directory
+==========================================
+Starting Jenkins Codespaces installation
+==========================================
+[1/5] Installing prerequisites, Git, and Java...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://download.docker.com/linux/ubuntu noble InRelease
+Ign:3 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:4 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:6 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:7 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:10 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20260816ubuntu0.24.04.1).
+curl is already the newest version (8.5.0-2ubuntu10.16).
+gnupg is already the newest version (2.4.4-2ubuntu17.6).
+git is already the newest version (1:2.43.0-1ubuntu7.4).
+fontconfig is already the newest version (2.15.0-1.1ubuntu2).
+openjdk-21-jre is already the newest version (21.0.12.1+1-1~24.04.4).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[2/5] Installing Azure CLI...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:8 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+azure-cli is already the newest version (2.91.0-1~noble).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[3/5] Installing Jenkins LTS...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+jenkins is already the newest version (2.580.1).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[4/5] Configuring Jenkins...
+Jenkins startup initiated.
+[5/5] Verifying installations...
+
+----- Installed versions -----
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Microsoft-14951822 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-14951822 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+git version 2.55.0
+Azure-cli    Azure-cli-core    Azure-cli-telemetry
+-----------  ----------------  ---------------------
+2.91.0       2.91.0            1.1.0
+Docker version 29.9.1, build dfc520d
+
+Docker daemon availability:
+WARNING: Docker CLI exists, but the daemon is unavailable.
+Configure Docker-in-Docker or another supported daemon.
+
+----- Jenkins status -----
+Jenkins process is running.
+
+----- Jenkins initial setup password -----
+Password not available yet.
+Check the Jenkins log: /var/log/jenkins/jenkins.log
+
+==========================================
+Installation script finished.
+Setup log: /workspaces/Terraform/logs/jenkins-codespace-setup.log
+Jenkins log: /var/log/jenkins/jenkins.log
+Jenkins port: 8080
+Open port 8080 in the Codespaces Ports tab.
+==========================================
+./jenkinssetup.sh: line 186: https://expert-eureka-6v967gq5gq57cqqj-8080.app.github.dev/: No such file or directory
+==========================================
+Starting Jenkins Codespaces installation
+==========================================
+[1/5] Installing prerequisites, Git, and Java...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:9 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20260816ubuntu0.24.04.1).
+curl is already the newest version (8.5.0-2ubuntu10.16).
+gnupg is already the newest version (2.4.4-2ubuntu17.6).
+git is already the newest version (1:2.43.0-1ubuntu7.4).
+fontconfig is already the newest version (2.15.0-1.1ubuntu2).
+openjdk-21-jre is already the newest version (21.0.12.1+1-1~24.04.4).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[2/5] Installing Azure CLI...
+Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:2 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:9 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+azure-cli is already the newest version (2.91.0-1~noble).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[3/5] Installing Jenkins LTS...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:8 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+jenkins is already the newest version (2.580.1).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[4/5] Configuring Jenkins...
+Jenkins is already running.
+[5/5] Verifying installations...
+
+----- Installed versions -----
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Microsoft-14951822 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-14951822 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+git version 2.55.0
+Azure-cli    Azure-cli-core    Azure-cli-telemetry
+-----------  ----------------  ---------------------
+2.91.0       2.91.0            1.1.0
+Docker version 29.9.1, build dfc520d
+
+Docker daemon availability:
+WARNING: Docker CLI exists, but the daemon is unavailable.
+Configure Docker-in-Docker or another supported daemon.
+
+----- Jenkins status -----
+Jenkins process is running.
+
+----- Jenkins initial setup password -----
+Password not available yet.
+Check the Jenkins log: /var/log/jenkins/jenkins.log
+
+==========================================
+Installation script finished.
+Setup log: /workspaces/Terraform/logs/jenkins-codespace-setup.log
+Jenkins log: /var/log/jenkins/jenkins.log
+Jenkins port: 8080
+Open port 8080 in the Codespaces Ports tab.
+==========================================
+./jenkinssetup.sh: line 186: https://expert-eureka-6v967gq5gq57cqqj-8080.app.github.dev/: No such file or directory
+==========================================
+Starting Jenkins Codespaces installation
+==========================================
+[1/5] Installing prerequisites, Git, and Java...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:6 http://archive.ubuntu.com/ubuntu noble InRelease
+Get:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Hit:9 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Get:11 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1733 kB]
+Get:12 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [2170 kB]
+Fetched 4029 kB in 3s (1565 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+ca-certificates is already the newest version (20260816ubuntu0.24.04.1).
+curl is already the newest version (8.5.0-2ubuntu10.16).
+gnupg is already the newest version (2.4.4-2ubuntu17.6).
+git is already the newest version (1:2.43.0-1ubuntu7.4).
+fontconfig is already the newest version (2.15.0-1.1ubuntu2).
+openjdk-21-jre is already the newest version (21.0.12.1+1-1~24.04.4).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[2/5] Installing Azure CLI...
+Hit:1 https://download.docker.com/linux/ubuntu noble InRelease
+Hit:2 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:3 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:9 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+azure-cli is already the newest version (2.91.0-1~noble).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[3/5] Installing Jenkins LTS...
+Hit:1 https://packages.microsoft.com/repos/azure-cli noble InRelease
+Hit:2 https://packages.microsoft.com/repos/microsoft-ubuntu-noble-prod noble InRelease
+Hit:3 https://download.docker.com/linux/ubuntu noble InRelease
+Ign:4 https://pkg.jenkins.io/debian-stable binary/ InRelease
+Hit:5 https://pkg.jenkins.io/debian-stable binary/ Release
+Hit:7 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu noble InRelease
+Hit:9 http://archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:10 http://archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+jenkins is already the newest version (2.580.1).
+The following packages were automatically installed and are no longer required:
+  apparmor docker-ce-rootless-extras moby-tini
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 73 not upgraded.
+[4/5] Configuring Jenkins...
+Jenkins startup initiated.
+[5/5] Verifying installations...
+
+----- Installed versions -----
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Microsoft-14951822 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-14951822 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+git version 2.55.0
+Azure-cli    Azure-cli-core    Azure-cli-telemetry
+-----------  ----------------  ---------------------
+2.91.0       2.91.0            1.1.0
+Docker version 29.9.1, build dfc520d
+
+Docker daemon availability:
+WARNING: Docker CLI exists, but the daemon is unavailable.
+Configure Docker-in-Docker or another supported daemon.
+
+----- Jenkins status -----
+Jenkins process is running.
+
+----- Jenkins initial setup password -----
+Password not available yet.
+Check the Jenkins log: /var/log/jenkins/jenkins.log
+
+==========================================
+Installation script finished.
+Setup log: /workspaces/Terraform/logs/jenkins-codespace-setup.log
+Jenkins log: /var/log/jenkins/jenkins.log
+Jenkins port: 8080
+Open port 8080 in the Codespaces Ports tab.
+==========================================
+./jenkinssetup.sh: line 186: https://expert-eureka-6v967gq5gq57cqqj-8080.app.github.dev/: No such file or directory

@@ -1,0 +1,23 @@
+OIDC server running on port 8000
+127.0.0.1 - - [25/Oct/2026 09:07:57] "HEAD /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:08:00] "HEAD /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:08:19] "HEAD /oidc/jwks HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:11:50] "GET /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:12:02] "GET /oidc/jwks HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:21:44] "GET /oidc/jwks HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:22:06] "GET /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:26:29] "GET /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:26:38] "GET /oidc/jwks HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:28:47] "GET /oidc/jwks HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:28:59] "GET /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:30:21] "GET /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:36:48] "GET /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:36:48] "GET /oidc/jwks HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:37:07] "GET /oidc HTTP/1.1" 301 -
+127.0.0.1 - - [25/Oct/2026 09:37:07] "GET /oidc/ HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:37:45] "GET /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:37:45] "GET /oidc/jwks HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:53:57] "GET /oidc/jwks HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 09:54:33] "GET /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 10:00:40] "GET /oidc/.well-known/openid-configuration HTTP/1.1" 200 -
+127.0.0.1 - - [25/Oct/2026 10:00:40] "GET /oidc/jwks HTTP/1.1" 200 -
